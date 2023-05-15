@@ -6,8 +6,6 @@ from copy import copy
 import asyncio
 import time
 import sys
-
-from tqdm import tqdm
 from pathlib import Path
 from datetime import datetime
 
@@ -18,6 +16,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage
 from tqdm.asyncio import tqdm_asyncio
+from tqdm import tqdm
 
 
 def parse_data(path):
